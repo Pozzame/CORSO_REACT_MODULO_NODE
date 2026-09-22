@@ -1,21 +1,56 @@
 {
-  "name": "corso_react_modulo_node",
+  "name": "corso-nodejs-2026",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Materiale del corso Node.js/Express (4 giorni) - esempi ed esercizi per ogni argomento della dispensa",
+  "main": "esempi/giorno3/api-dipendenti/app.js",
+  "license": "UNLICENSED",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "g1:01": "node esempi/giorno1/01-sync-vs-async.js",
+    "g1:02": "node esempi/giorno1/02-primo-script-argv.js",
+    "g1:03": "node esempi/giorno1/03-oggetto-process-globale.js",
+    "g1:04": "node esempi/giorno1/04-http-nativo-vs-express.js",
+    "g1:05": "nodemon esempi/giorno1/05-primo-server-express.js",
+    "g1:06": "nodemon esempi/giorno1/06-dotenv-env.js",
+    "g1:07": "nodemon esempi/giorno1/07-metodi-risposta.js",
+    "g2:01": "nodemon esempi/giorno2/01-route-base-crud.js",
+    "g2:02": "nodemon esempi/giorno2/02-parametri-rotta-query-string.js",
+    "g2:03": "nodemon esempi/giorno2/router-modulare/app.js",
+    "g2:04": "nodemon esempi/giorno2/04-piu-handler-e-404.js",
+    "g2:05": "nodemon esempi/giorno2/05-oggetto-req-dettagliato.js",
+    "g2:06": "nodemon esempi/giorno2/06-oggetto-res-e-status.js",
+    "g2:07": "nodemon esempi/giorno2/07-gestione-errori-middleware.js",
+    "g2:08": "nodemon esempi/giorno2/08-validazione-body.js",
+    "g3:01": "nodemon esempi/giorno3/01-middleware-base-e-catena.js",
+    "g3:02": "nodemon esempi/giorno3/02-tipi-middleware.js",
+    "g3:03": "nodemon esempi/giorno3/03-middleware-integrati.js",
+    "g3:04": "nodemon esempi/giorno3/04-morgan-logging.js",
+    "g3:05": "nodemon esempi/giorno3/05-cors.js",
+    "g3:06": "nodemon esempi/giorno3/06-middleware-personalizzati.js",
+    "g3:07": "nodemon esempi/giorno3/07-ordine-middleware-app-completa.js",
+    "g3:api": "nodemon esempi/giorno3/api-dipendenti/app.js",
+    "g4:basic": "nodemon esempi/giorno4/01-basic-auth/app.js",
+    "g4:session": "nodemon esempi/giorno4/02-session-based/app.js",
+    "g4:jwt": "nodemon esempi/giorno4/03-jwt/app.js",
+    "es:g1:01": "node esercizi/giorno1/esercizio-01-soluzione.js 12 30",
+    "es:g1:02": "node esercizi/giorno1/esercizio-02-soluzione.js",
+    "es:g1:03": "nodemon esercizi/giorno1/esercizio-03-soluzione.js",
+    "es:g2:01": "nodemon esercizi/giorno2/esercizio-01-soluzione/app.js",
+    "es:g2:02": "nodemon esercizi/giorno2/esercizio-02-soluzione.js",
+    "es:g2:03": "nodemon esercizi/giorno2/esercizio-03-soluzione.js",
+    "es:g3": "nodemon esercizi/giorno3/soluzione/app.js",
+    "es:g4": "nodemon esercizi/giorno4/soluzione/app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/docenteFulviaTF/CORSO_REACT_MODULO_NODE.git"
+  "dependencies": {
+    "express": "^4.18.2",
+    "dotenv": "^16.4.5",
+    "morgan": "^1.10.0",
+    "cors": "^2.8.5",
+    "express-session": "^1.18.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/docenteFulviaTF/CORSO_REACT_MODULO_NODE/issues"
-  },
-  "homepage": "https://github.com/docenteFulviaTF/CORSO_REACT_MODULO_NODE#readme"
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
 }
