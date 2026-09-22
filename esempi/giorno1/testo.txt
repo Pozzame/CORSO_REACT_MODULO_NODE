@@ -1,0 +1,2 @@
+Questo è il contenuto del file letto in modo asincrono da fs.readFile.
+Se lo vedi stampato DOPO "Dopo la lettura", l'event loop sta funzionando come previsto.
