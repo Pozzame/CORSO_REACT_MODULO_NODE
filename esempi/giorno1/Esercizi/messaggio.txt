@@ -1,0 +1,1 @@
+Sono il contenuto di messaggio.txt, letto in modo asincrono dopo 3 secondi.
