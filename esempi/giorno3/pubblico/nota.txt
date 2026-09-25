@@ -1,0 +1,1 @@
+Questo file è servito staticamente da express.static, senza bisogno di una route dedicata.

@@ -1,0 +1,52 @@
+### API Gestione Dipendenti — richieste di prova
+### Apri questo file con l'estensione "REST Client" di VS Code (o copia le
+### richieste in Thunder Client/Postman) per testarle con un click.
+### Avvia prima il server: npm run g3:api
+
+### 1. Ottenere tutti i dipendenti
+GET http://localhost:3000/dipendenti
+
+### 2. Filtrare per reparto
+GET http://localhost:3000/dipendenti?reparto=IT
+
+### 3. Ottenere un singolo dipendente
+GET http://localhost:3000/dipendenti/1
+
+### 4. Creare un nuovo dipendente
+POST http://localhost:3000/dipendenti
+Content-Type: application/json
+
+{
+    "nome": "Giulia",
+    "cognome": "Moretti",
+    "reparto": "IT",
+    "stipendio": 36000
+}
+
+### 5. Sostituire completamente un dipendente
+PUT http://localhost:3000/dipendenti/1
+Content-Type: application/json
+
+{
+    "nome": "Luca",
+    "cognome": "Ferrari",
+    "reparto": "IT",
+    "stipendio": 37000
+}
+
+### 6. Aggiornare parzialmente (solo lo stipendio)
+PATCH http://localhost:3000/dipendenti/1
+Content-Type: application/json
+
+{
+    "stipendio": 40000
+}
+
+### 7. Eliminare un dipendente
+DELETE http://localhost:3000/dipendenti/1
+
+### 8. Dipendente inesistente -> 404
+GET http://localhost:3000/dipendenti/999
+
+### 9. Rotta inesistente -> 404 handler generico
+GET http://localhost:3000/non-esiste
